@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Music Recommendation App</title>
+</head>
+
+<body>
+    <h1>Music Recommendation App</h1>
+    <audio controls>
+        <source src="{{ song_url }}" type="audio/mpeg">
+    </audio>
+    <form action="/recommend" method="post">
+        <input type="text" name="song_id" placeholder="Enter song ID">
+        <input type="submit" value="Recommend">
+    </form>
+</body>
+
+</html>
