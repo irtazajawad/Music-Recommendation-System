@@ -24,10 +24,9 @@ In this phase, the data was downloaded sampled, and then processed to extract fe
 In this phase, the data was loaded from MongoDB and used for training the model. Spark was used to load the data via the Spark-Mongo connector. K-Means from Scikit learn were used to train the model which is accurate up to 40%. After training you can input a Track ID and get five similar songs. This model was later used in the web application.
 
 ## Phase 3: 
-For each document, the **Term Frequency (TF)** was calculated. Term frequency represents the frequency of occurrence of each term within a document. This information was stored in a dictionary, where each key represents a document and its corresponding value is another dictionary containing _term-frequency pairs_.
-
+In this phase, the code loads a trained machine learning model, specifically a KMeans clustering model, and a StandardScaler model. These models are essential for generating song recommendations. The code also retrieves the cluster centroids from the KMeans model. 
 
 ## References:
-- Hadoop Documentation: https://hadoop.apache.org/docs/stable/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
-- Cholissodin, Imam & Seruni, Diajeng & Zulqornain, Junda & Hanafi, Audi & Ghofur, Afwan & Alexander, Mikhael & Hasan, Muhammad. (2020). [Development of Big Data App for Classification based on Map Reduce of Naive Bayes with or without Web and Mobile Interface by RESTful API Using Hadoop and Spark](https://www.researchgate.net/publication/348110835_Development_of_Big_Data_App_for_Classification_based_on_Map_Reduce_of_Naive_Bayes_with_or_without_Web_and_Mobile_Interface_by_RESTful_API_Using_Hadoop_and_Spark). Journal of Information Technology and Computer Science. 
-- Vector Space Model: https://towardsdatascience.com/lets-understand-the-vector-space-model-in-machine-learning-by-modelling-cars-b60a8df6684f
+- MFCC Features: (https://medium.com/@derutycsl/intuitive-understanding-of-mfccs-836d36a1f779)
+-K Means(https://en.wikipedia.org/wiki/K-means_clustering)
+- Mongo DB connectors: https://www.mongodb.com/products/integrations/connectors
