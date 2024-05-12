@@ -6,11 +6,12 @@
 This project provides a web-based interface for a music recommendation system that can play and recommend songs based on what the user is listening to. This is achieved by training an ML model which can then recommend songs by taking a single song as input. The model was trained on a sample of fma_large.zip file which contains 30s audio files. The dependencies used in the project are as follows:
 
 ## Dependencies:
-- [Numpy] (https://docs.python.org/3/library/re.html](https://numpy.org/doc/)
+- Numpy
 - [SciKit Learn]([https://docs.python.org/3/library/csv.html](https://scikit-learn.org/0.21/documentation.html))
 - [Py Spark]([https://docs.python.org/3/library/sys.html](https://spark.apache.org/docs/latest/api/python/index.html))
 - [Liberosa]([https://docs.python.org/3/library/itertools.html](https://librosa.org/doc/))
 - [Pandas](https://pandas.pydata.org/docs/)
+- OS
 
 ## Dataset Used:
 The data used for this project can be found at: https://scikit-learn.org/0.21/documentation.html
